@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Table Layout</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .container { width: fit-content; border: 2px solid black; }
+        .header-row { display: flex; }
+        .column-header { width: 100px; background-color: lightgray; border: 1px solid black; padding: 5px; text-align: center; font-weight: bold; }
+        .content { display: flex; }
+        .col1 { width: 100px; background-color: lightblue; border: 1px solid black; padding: 5px; }
+        .right-side { width: 200px; }
+        .top-row { display: flex; }
+        .col2 { width: 100px; background-color: yellow; border: 1px solid black; padding: 15px 0; text-align: center; font-weight: bold; }
+        .col3 { width: 100px; background-color: red; border: 1px solid black; padding: 15px 0; text-align: center; font-weight: bold; color: rgb(0, 0, 0); }
+        .green-section { background-color: green; border: 1px solid black; color: rgb(0, 0, 0); padding: 5px; }
+        .list { list-style-position: inside; padding-left: 0; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-row">
+            <div class="column-header">Column 1</div>
+            <div class="column-header">Column 2</div>
+            <div class="column-header">Column 3</div>
+        </div>
+        <div class="content">
+            <div class="col1">
+                <p>A numbered list:</p>
+                <ol class="list">
+                    <li>Able</li>
+                    <li>Baker</li>
+                    <li>Charlie</li>
+                    <li>Delta</li>
+                    <li>Echo</li>
+                </ol>
+            </div>
+            <div class="right-side">
+                <div class="top-row">
+                    <div class="col2">B</div>
+                    <div class="col3">C</div>
+                </div>
+                <div class="green-section">
+                    <p>An unnumbered list:</p>
+                    <ul class="list">
+                        <li>Pounds</li>
+                        <li>Dollars</li>
+                        <li>Euro</li>
+                        <li>Yen</li>
+                        <li>Roubles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
